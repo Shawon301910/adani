@@ -1,0 +1,10 @@
+@media screen and (max-width: 1000px) {
+    .blo-hid {
+        display: none;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .menu {
+        display: none;
+    }
+}
