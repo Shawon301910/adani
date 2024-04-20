@@ -9,7 +9,7 @@ function stickyNavbar() {
     const hidden = document.getElementById("hidden");
     const logo = document.getElementById("logo-fn");
     const bg = document.getElementById("bg-white-fn");
-    if (window.scrollY > 50) {
+    if (window.scrollY > 20) {
         nav.classList.add("fixed");
         hidden.classList.add("hidden");
         logo.classList.add("logo-font");

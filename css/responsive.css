@@ -1,10 +1,41 @@
 @media screen and (max-width: 1000px) {
+    .logo {
+        border-right: 2px solid #EBEBEB;
+    }
     .blo-hid {
         display: none;
     }
-}
-@media screen and (min-width: 1000px) {
     .menu {
-        display: none;
+        display: block;
+    }
+    .mushkilon-flex {
+        flex-direction: column;
+    }
+    .mushkilon-video {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .flex-box-40-resp {
+        width: 100%;
+    }
+    .featured-container-box-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 640px) {
+    html {
+        font-size: 8px;
+    }
+    .absolute-m-nav {
+        width: 100%;
+    }
+    .mushkilon-ext {
+        width: 100%;
+    }
+    .mushkilon-video {
+        width: 70%;
     }
 }
