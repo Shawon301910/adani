@@ -15,6 +15,16 @@
         width: 80%;
         margin: 0 auto;
     }
+    .businesses-container-box-1 {
+        padding-top: 50px;
+    }
+    .businesses-container-box-2 {
+        width: 90%;
+        padding-top: 50px;
+    }
+    .businesses-card {
+        height: 200px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -23,6 +33,12 @@
     }
     .featured-container-box-2 {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .businesses-container {
+        padding-top: 10px;
+    }
+    .businesses-container-box-2 {
+        padding-top: 40px;
     }
 }
 @media screen and (max-width: 640px) {
@@ -37,5 +53,14 @@
     }
     .mushkilon-video {
         width: 70%;
+    }
+    .businesses-container {
+        padding-top: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .businesses-container-box-2 {
+        width: 70%;
+        grid-template-columns: repeat(1, 1fr);
     }
 }

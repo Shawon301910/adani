@@ -220,6 +220,10 @@ td {
 
 /* start mushkilon section */
 
+#mushkilon-section {
+    transition: 0.5 ease;
+}
+
 .mushkilon-banner-video {
     width: 100%;
 }
@@ -312,7 +316,7 @@ td {
 }
 
 .featured-card-content {
-    height:150px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -324,9 +328,11 @@ td {
     font-size: 2rem;
     color: #2EBD84;
 }
+
 .featured-card-description {
     font-size: 1.5rem;
 }
+
 .featured-card-read-more {
     font-size: 1.5rem;
     font-weight: 700;
@@ -368,6 +374,68 @@ td {
     width: 80%;
     margin: 0 auto;
     text-align: center;
+}
+
+.businesses-container-box-2 {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 70px;
+}
+
+.businesses-card {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 20px;
+}
+
+.businesses-card-img-cont {
+    width: 25%;
+}
+
+.businesses-card-img-cont img {
+    width: 100%;
+    transition: 0.6s ease;
+}
+
+.businesses-card-info {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+
+.businesses-hover-effect {
+    display: none;
+}
+
+.businesses-card:hover {
+    background-color: #fff;
+    box-shadow: 0 0 20px #b5b5b5;
+    transform: translateY(-30px);
+    transition: 0.6s ease;
+}
+
+.businesses-card:hover .businesses-card-img-cont img {
+    transform: translateY(0px) scale(0.7);
+    transition: 0.6s ease;
+}
+.businesses-card:hover .businesses-card-info {
+    color: #0055ff;
+    margin-top: -25px;
+    line-height: 25px;
+    transition: 0.6s ease;
+}
+.businesses-card:hover a {
+    color: #0055ff;
+}
+
+.businesses-card:hover .businesses-hover-effect {
+    display: block;
 }
 
 /* end businesses section */

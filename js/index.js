@@ -9,16 +9,19 @@ function stickyNavbar() {
     const hidden = document.getElementById("hidden");
     const logo = document.getElementById("logo-fn");
     const bg = document.getElementById("bg-white-fn");
+    const overlay = document.getElementById("mushkilon-section");
     if (window.scrollY > 20) {
         nav.classList.add("fixed");
         hidden.classList.add("hidden");
         logo.classList.add("logo-font");
         bg.classList.add("bg-white");
+        overlay.style.paddingTop = "60px"
     } else {
         nav.classList.remove("fixed");
         hidden.classList.remove("hidden");
         logo.classList.remove("logo-font");
         bg.classList.remove("bg-white");
+        overlay.style.paddingTop = "0px"
     }
 };
 
