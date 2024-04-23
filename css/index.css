@@ -424,12 +424,14 @@ td {
     transform: translateY(0px) scale(0.7);
     transition: 0.6s ease;
 }
+
 .businesses-card:hover .businesses-card-info {
     color: #0055ff;
     margin-top: -25px;
     line-height: 25px;
     transition: 0.6s ease;
 }
+
 .businesses-card:hover a {
     color: #0055ff;
 }
@@ -439,3 +441,135 @@ td {
 }
 
 /* end businesses section */
+
+/* start sustainability section */
+
+#sustainability {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.news-and-ceo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.news-card {
+    background-color: #fff;
+    padding: 20px 25px;
+    box-shadow: 0 0 20px #c5c5c5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.news-card-title {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.title-card-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title-card-info-container-content {
+    display: flex;
+    gap: 10px;
+}
+
+.news-icon img {
+    width: 30px;
+}
+
+.title-card-info-sub-description p a,
+.title-card-info-sub-description p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.title-card-info-sub-description p:last-child {
+    line-height: 10px;
+    color: #8b8b8b;
+}
+
+.news-card-view-more {
+    padding-top: 20px;
+}
+
+.news-card-view-more a {
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    color: #fff;
+    background-image: linear-gradient(to right, #1C9C95, #306FB1);
+}
+
+.news-card-view-more a:hover {
+    background-image: linear-gradient(to right, #306FB1, #306FB1);
+    transition: 3s;
+}
+
+.ceo-card {
+    grid-column: 2 / span 2;
+}
+
+.ceo-card-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ECECEE;
+}
+
+.ceo-details-container {
+    background-color: #306FB1;
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 25px;
+}
+
+.ceo-details-title {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.ceo-details-description {
+    font-size: 3.5rem;
+}
+
+.ceo-details-footer p:first-child {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.ceo-details-footer p:last-child {
+    font-size: 1.3rem;
+}
+
+.ceo-image {
+    position: relative;
+    width: 1500px;
+    display: flex;
+    align-items: flex-end;
+}
+.ceo-image img {
+    width: 100%;
+}
+
+.sustainability-img-overlay {
+    position: absolute;
+    top: 20px;
+    left: -39px;
+    background-color: #ECECEE;
+    width: 40px;
+    height: 40px;
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    /* transform: rotate(-90deg); */
+    transform-origin: bottom;
+}
+
+/* end sustainability section */
