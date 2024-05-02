@@ -26,7 +26,9 @@ function stickyNavbar() {
 };
 
 
-// click and show or close nav bar
+
+// click and show or close nav bar -------------------->
+
 document.getElementById("show-nav").addEventListener("click", () => {
     const showContainer = document.getElementById("show-nav-container");
     showContainer.style.display = "flex";
@@ -35,3 +37,27 @@ document.getElementById("close-nav").addEventListener("click", () => {
     const showContainer = document.getElementById("show-nav-container");
     showContainer.style.display = "none";
 });
+
+
+
+// footer functionality -------------------->
+
+let isSiteMapClick = false;
+
+const siteMap = document.getElementById("siteMap");
+const arrowFo = document.getElementById("arrow-fo");
+const siteMapLinkContainer = document.getElementById("siteMap-link-container");
+siteMap.addEventListener("click", () => {
+    if (!isSiteMapClick) {
+        arrowFo.classList.add("rotate-90");
+        siteMapLinkContainer.classList.add("hidden")
+        siteMapLinkContainer.classList.remove("flex")
+        isSiteMapClick = true;
+    }
+    else {
+        arrowFo.classList.remove("rotate-90");
+        siteMapLinkContainer.classList.add("flex")
+        siteMapLinkContainer.classList.remove("hidden")
+        isSiteMapClick = false;
+    }
+})
