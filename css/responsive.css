@@ -126,6 +126,9 @@
     .growth-adani-img {
         padding-left: 0;
     }
+    .our-group-container {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -296,5 +299,8 @@
 
     .sitemap-container {
         width: 95%;
+    }
+    .our-group-container {
+        width: 80%;
     }
 }

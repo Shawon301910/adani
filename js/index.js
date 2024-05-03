@@ -1,3 +1,37 @@
+// onScroll animation js initialize
+AOS.init();
+
+// owl carousel initialize
+$(document).ready(function () {
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 2,
+                nav: true,
+            },
+            500: {
+                items: 3,
+                nav: true,
+            },
+            600: {
+                items: 4,
+                nav: true,
+            },
+            1000: {
+                items: 5,
+                nav: true,
+            },
+            1300: {
+                items: 7,
+                nav: true,
+            }
+        }
+    });
+});
+
 // window scroll functionality -------------------->
 
 window.onscroll = function () { stickyNavbar() };
@@ -42,20 +76,20 @@ document.getElementById("close-nav").addEventListener("click", () => {
 
 // footer functionality -------------------->
 
-let isSiteMapClick = false;
+let isSiteMapClick = true;
 
 const siteMap = document.getElementById("siteMap");
 const arrowFo = document.getElementById("arrow-fo");
 const siteMapLinkContainer = document.getElementById("siteMap-link-container");
 siteMap.addEventListener("click", () => {
     if (!isSiteMapClick) {
-        arrowFo.classList.add("rotate-90");
+        arrowFo.classList.remove("rotate-90");
         siteMapLinkContainer.classList.add("hidden")
         siteMapLinkContainer.classList.remove("flex")
         isSiteMapClick = true;
     }
     else {
-        arrowFo.classList.remove("rotate-90");
+        arrowFo.classList.add("rotate-90");
         siteMapLinkContainer.classList.add("flex")
         siteMapLinkContainer.classList.remove("hidden")
         isSiteMapClick = false;
